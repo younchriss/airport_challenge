@@ -8,4 +8,8 @@ describe Airport do
     it 'Checks the class responds to the land method' do
         expect(airport).to respond_to(:land).with(1).argument
     end
+
+    it 'Checks airport responds to take_off' do
+        expect(airport).to respond_to(:take_off).with(1).argument
+    end
 end
